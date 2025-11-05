@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "npx tailwindcss -i public/stylesheets/main.css -o public/stylesheets/output.css --watch",
+    "build": "npx tailwindcss -i public/stylesheets/main.css -o public/stylesheets/output.css --minify",
+    "serve": "npx serve public/"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "html2canvas": "^1.4.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.7"
+  }
+}

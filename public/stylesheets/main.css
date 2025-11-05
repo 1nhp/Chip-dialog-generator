@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+.heading{
+    @apply text-3xl
+}
+
+.bgcontainer{
+    width: 100%;
+    height: 179px;
+    position: fixed;
+    bottom: -50px;
+    background-repeat: repeat-x;    
+}
+
+.bgdown{
+    background-image: url("../images/ui_bg_down.png");
+}
+
+.bgup{
+    background-image: url("../images/ui_bg_up.png");
+    top: 0;    
+}
+
+@layer components {
+  button {
+    @apply text-white bg-[#004d01] border-[#004d01] cursor-pointer border-1 p-[5px] sm:text-lg md:text-2xl lg:text-3xl;
+    background: repeating-linear-gradient(
+      180deg,
+      rgba(0, 140, 0, 1) 0 1px,
+      rgba(0, 140, 0, 0.05) 1px 3px
+    );
+  }
+
+  button:hover {
+    background-color: rgba(250, 204, 21, 0.6); /* instead of bg-yellow-400/60 */
+  }
+}
+
+textarea{
+    @apply text-white bg-[#004d01] border-[#004d01] cursor-pointer border-1;
+    background: repeating-linear-gradient(
+      180deg,
+      rgba(0, 140, 0, 1) 0 1px,
+      rgba(0, 140, 0, 0.05) 1px 3px
+    );
+    width: auto;
+    height: 50px;    
+}
