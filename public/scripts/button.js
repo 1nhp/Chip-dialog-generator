@@ -23,3 +23,7 @@ music_btn.addEventListener("click", () => {
         pausemusic()
     }
 });
+
+function credits(){
+    alert("Background - Sonic Unleashed, Sonic Team\nSound Effects - Sonic Unleashed, Sonic Team\nDialog box - Sonic Unleashed, Sonic Team\nMusic - Sonic Unleashed, Sonic Team\nNiklas von Hertzen - Html2canvas https://github.com/niklasvh/html2canvas for saving image\nVercel - For deploying tool\nUnleashed Recompiled - For screenshoting dialog box \n\nThis tool is not endorsored or is affliated with Sega, Sonic Team this is a non-profit project")
+}
