@@ -1,0 +1,1 @@
+Sitemap: https://chip-dialog-generator.vercel.app/sitemap.xml
