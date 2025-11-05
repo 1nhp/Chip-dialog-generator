@@ -10,17 +10,14 @@ function playsound(audio) {
   });
 }
 
-// Select the element you want to capture
-function saveimage(){
+function saveimage() {
     const elementToCapture = document.getElementById("dialog_box");
 
-    html2canvas(elementToCapture).then(function(canvas) {
-        // Append the canvas to the body or another element
-
-        // You can also convert the canvas to an image data URL
+    html2canvas(elementToCapture, {
+        backgroundColor: null, // ✅ Keeps transparency
+    }).then(function(canvas) {
         const imageDataURL = canvas.toDataURL("image/png");
 
-        // Create a link to download the image
         const link = document.createElement("a");
         link.download = "chip_dialog.png";
         link.href = imageDataURL;
