@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('button, textarea');
+const buttons = document.querySelectorAll('button, textarea, input');
 
 buttons.forEach(button => {
     button.addEventListener('mouseenter', () => {

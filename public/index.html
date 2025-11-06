@@ -28,15 +28,19 @@
             <div class="flex flex-col items-center pt-[175px]">
 
                 <h1 class="heading">Chip Dialog Generator</h1> 
-                    <div id="dialog_box" class="relative inline-block">
-                        <img src="images/chip.PNG" alt="Chip" class="w-full h-auto">
-                            <span id="dialog_text" class="absolute top-[24%] left-[18%] inline-block text-white text-base sm:text-lg md:text-2xl lg:text-3xl text-base/5 w-2/3 h-2/3 overflow-hidden break-words" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"></span>
+                    <div id="dialog_box" class="relative w-90 sm:w-[550px] md:w-[800px]">
+                        <img src="images/SU_dialog_box.png" alt="Chip" class="w-full h-auto">
+                        <img src="images/dialog_charaimg_chip.png" class="absolute top-[28%] left-[4%] w-[13%]" alt="Chip">
+                        <span id="dialog_text" class="absolute top-[24%] left-[18%]  inline-block text-white text-base sm:text-lg md:text-2xl lg:text-3xl w-2/3 h-2/3 overflow-hidden break-words" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"></span>
+                        <span id="dialog_charactertext" class="absolute top-[3%] left-[4%] text-left text-sm sm:text-lg md:text-2xl lg:text-2xl" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">CHIP</span>
                     </div>
-                    <div class="flex items-center gap-1 flex-row">
-                        <label class="text-left" for="lname">Dialog text</label><br>
-                        <textarea maxlength="120" id="dialog_input" type="search" name="lastname"></textarea><br><br>
-                        <button id="music_btn" onclick="saveimage()">Save</button>                        
-                </div>       
+                    <div class="flex items-center mt-5 gap-2 flex-col sm:flex-row">
+                        <label class="text-left pr-3" for="lname">Dialog text</label><br>
+                        <textarea maxlength="120" id="dialog_input"></textarea><br><br>
+                        <label class="text-left" for="lname">Dialog name</label><br>
+                        <input maxlength="7" id="dialog_nameinput"></input><br><br>                        
+                </div>                
+                    <button id="music_btn" class="mt-5" onclick="saveimage()">Save</button>                
             </div>         
         </div>        
     </body>

@@ -36,7 +36,7 @@
   }
 }
 
-textarea{
+textarea, input{
     @apply text-white bg-[#004d01] border-[#004d01] cursor-pointer border-1;
     background: repeating-linear-gradient(
       180deg,
