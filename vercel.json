@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/sitemap-v3.xml",
+      "source": "/sitemap-v4.xml",
       "headers": [
         { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
       ]
